@@ -37,18 +37,18 @@ export default function Navbar() {
   };
 
   return (
-    <nav 
+    <nav
       className={`
         sticky top-0 w-full z-50 transition-all duration-300
-        ${isScrolled 
-          ? 'bg-slate-900/80 dark:bg-slate-950/80 backdrop-blur-md shadow-2xl shadow-sky-900/10' 
+        ${isScrolled
+          ? 'bg-[var(--color-surface)]/80 dark:bg-[var(--color-surface)]/80 backdrop-blur-md shadow-lg shadow-black/5 dark:shadow-sky-900/10'
           : 'bg-transparent'
         }
       `}
     >
       <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto">
         {/* Logo */}
-        <Link to="/index.html" className="text-xl font-extrabold text-slate-100 dark:text-white tracking-tighter font-[var(--font-headline)]">
+        <Link to="/index.html" className="text-xl font-extrabold text-[var(--color-on-surface)] dark:text-[var(--color-on-surface)] tracking-tighter font-[var(--font-headline)]">
           BhanuPrakash <span className="text-[var(--color-tertiary)]">⚡</span>
         </Link>
 
@@ -60,9 +60,9 @@ export default function Navbar() {
               to={link.path}
               className={`
                 transition-colors duration-200 pb-1
-                ${isActive(link.path) 
-                  ? 'text-[var(--color-secondary)] border-b-2 border-[var(--color-secondary)]' 
-                  : 'text-slate-400 hover:text-sky-200'
+                ${isActive(link.path)
+                  ? 'text-[var(--color-secondary)] border-b-2 border-[var(--color-secondary)]'
+                  : 'text-[var(--color-on-surface-variant)] hover:text-[var(--color-secondary)]'
                 }
               `}
             >
@@ -73,6 +73,14 @@ export default function Navbar() {
 
         {/* Right Section */}
         <div className="flex items-center gap-3">
+          {/* Hire Me Button */}
+          <Link
+            to="/contact.html"
+            className="hidden md:flex bg-[var(--color-secondary-container)] text-[var(--color-on-secondary)] px-6 py-2 rounded-xl font-[var(--font-headline)] font-semibold scale-95 hover:scale-100 transition-all duration-200"
+          >
+            Hire Me
+          </Link>
+
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
@@ -94,7 +102,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu Drawer */}
-      <div 
+      <div
         className={`
           md:hidden overflow-hidden transition-all duration-300 ease-in-out
           ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
@@ -108,8 +116,8 @@ export default function Navbar() {
                 to={link.path}
                 className={`
                   px-4 py-3 rounded-lg transition-colors font-[var(--font-headline)] font-semibold
-                  ${isActive(link.path) 
-                    ? 'text-[var(--color-secondary)] bg-[var(--color-secondary)]/10' 
+                  ${isActive(link.path)
+                    ? 'text-[var(--color-secondary)] bg-[var(--color-secondary)]/10'
                     : 'text-[var(--color-on-surface-variant)] hover:bg-[var(--color-surface-container-high)]'
                   }
                 `}
