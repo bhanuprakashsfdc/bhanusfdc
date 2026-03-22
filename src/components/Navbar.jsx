@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useTheme } from '../hooks/useLocalStorage';
 
 const navLinks = [
   { path: '/index.html', label: 'Home' },
@@ -14,7 +13,6 @@ const navLinks = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { isDark, toggleTheme } = useTheme();
   const location = useLocation();
 
   useEffect(() => {
@@ -41,14 +39,14 @@ export default function Navbar() {
       className={`
         sticky top-0 w-full z-50 transition-all duration-300
         ${isScrolled
-          ? 'bg-[var(--color-surface)]/80 dark:bg-[var(--color-surface)]/80 backdrop-blur-md shadow-lg shadow-black/5 dark:shadow-sky-900/10'
+          ? 'bg-[var(--color-surface)]/80 backdrop-blur-md shadow-lg shadow-black/5'
           : 'bg-transparent'
         }
       `}
     >
       <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto">
         {/* Logo */}
-        <Link to="/index.html" className="text-xl font-extrabold text-[var(--color-on-surface)] dark:text-[var(--color-on-surface)] tracking-tighter font-[var(--font-headline)]">
+        <Link to="/index.html" className="text-xl font-extrabold text-[var(--color-on-surface)] tracking-tighter font-[var(--font-headline)]">
           BhanuPrakash <span className="text-[var(--color-tertiary)]">⚡</span>
         </Link>
 
@@ -80,15 +78,6 @@ export default function Navbar() {
           >
             Hire Me
           </Link>
-
-          {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            className="material-symbols-outlined text-[var(--color-on-surface-variant)] hover:bg-[var(--color-secondary)]/10 p-2 rounded-lg transition-all"
-            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-          >
-            {isDark ? 'light_mode' : 'dark_mode'}
-          </button>
 
           {/* Mobile Menu Button */}
           <button
