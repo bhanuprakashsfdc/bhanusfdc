@@ -41,14 +41,14 @@ export default function Navbar() {
       className={`
         sticky top-0 w-full z-50 transition-all duration-300
         ${isScrolled
-          ? 'bg-slate-900/80 dark:bg-slate-950/80 backdrop-blur-md shadow-2xl shadow-sky-900/10'
+          ? 'bg-[var(--color-surface)]/80 dark:bg-[var(--color-surface)]/80 backdrop-blur-md shadow-lg shadow-black/5 dark:shadow-sky-900/10'
           : 'bg-transparent'
         }
       `}
     >
       <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto">
         {/* Logo */}
-        <Link to="/index.html" className="text-xl font-extrabold text-slate-100 dark:text-white tracking-tighter font-[var(--font-headline)]">
+        <Link to="/index.html" className="text-xl font-extrabold text-[var(--color-on-surface)] dark:text-[var(--color-on-surface)] tracking-tighter font-[var(--font-headline)]">
           BhanuPrakash <span className="text-[var(--color-tertiary)]">⚡</span>
         </Link>
 
@@ -62,7 +62,7 @@ export default function Navbar() {
                 transition-colors duration-200 pb-1
                 ${isActive(link.path)
                   ? 'text-[var(--color-secondary)] border-b-2 border-[var(--color-secondary)]'
-                  : 'text-slate-400 hover:text-sky-200'
+                  : 'text-[var(--color-on-surface-variant)] hover:text-[var(--color-secondary)]'
                 }
               `}
             >

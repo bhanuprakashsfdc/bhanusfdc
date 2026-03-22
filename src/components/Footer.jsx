@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
-            <Link to="/index.html" className="text-xl font-extrabold text-slate-100 dark:text-white tracking-tighter font-[var(--font-headline)]">
+            <Link to="/index.html" className="text-xl font-extrabold text-[var(--color-on-surface)] tracking-tighter font-[var(--font-headline)]">
               BhanuPrakash <span className="text-[var(--color-tertiary)]">⚡</span>
             </Link>
             <p className="mt-3 text-sm text-[var(--color-on-surface-variant)]">

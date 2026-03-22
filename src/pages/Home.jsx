@@ -158,13 +158,13 @@ export default function Home() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/blog.html"
-              className="px-8 py-3 bg-[var(--color-secondary-container)] text-white font-semibold rounded-xl hover:bg-[var(--color-secondary)] transition-all hover:scale-105"
+              className="px-8 py-3 bg-[var(--color-secondary-container)] text-[var(--color-on-secondary-container)] font-semibold rounded-xl hover:bg-[var(--color-secondary)] transition-all hover:scale-105"
             >
               Read My Blog
             </Link>
             <Link
               to="/portfolio.html"
-              className="px-8 py-3 border-2 border-[var(--color-secondary)] text-[var(--color-secondary)] font-semibold rounded-xl hover:bg-[var(--color-secondary)] hover:text-white transition-all hover:scale-105"
+              className="px-8 py-3 border-2 border-[var(--color-secondary)] text-[var(--color-secondary)] font-semibold rounded-xl hover:bg-[var(--color-secondary)] hover:text-[var(--color-on-secondary)] transition-all hover:scale-105"
             >
               View Portfolio
             </Link>

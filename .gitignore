@@ -41,3 +41,5 @@ vite.config.ts.timestamp-*
 Thumbs.db
 
 docs
+.sfdx
+.vite
