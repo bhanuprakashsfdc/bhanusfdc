@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { posts, categories, tags } from '../data/posts';
+import { social } from '../data/social';
 import AdSlot from '../components/AdSlot';
 
 // Sidebar components
@@ -24,12 +25,12 @@ function SidebarAuthor() {
         10+ years building enterprise Salesforce solutions. 16x certified. Agentforce specialist.
       </p>
       <a
-        href="https://linkedin.com/in/bhanuprakashsfdc"
+        href={social.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-[var(--color-secondary-container)] text-white text-sm font-medium rounded-lg hover:bg-[var(--color-secondary)] transition-colors"
       >
-        <span className="material-symbols-outlined text-sm">linkedin</span>
+        <span className="material-symbols-outlined text-sm">link</span>
         Connect on LinkedIn
       </a>
     </div>

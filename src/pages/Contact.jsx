@@ -1,4 +1,5 @@
 import { useContactForm, useToast } from '../hooks/useLocalStorage';
+import { social } from '../data/social';
 import AdSlot from '../components/AdSlot';
 
 const subjects = [
@@ -137,12 +138,12 @@ export default function Contact() {
               
               {/* LinkedIn Button */}
               <a
-                href="https://linkedin.com/in/bhanuprakashsfdc"
+                href={social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 bg-[#0077b5] text-white font-semibold rounded-lg hover:bg-[#005885] transition-colors"
               >
-                <span className="material-symbols-outlined">linkedin</span>
+                <span className="material-symbols-outlined">link</span>
                 Connect on LinkedIn
               </a>
 

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { social } from '../data/social';
 
 const footerLinks = {
   pages: [
@@ -15,9 +16,9 @@ const footerLinks = {
   ],
   connect: [
     { path: '/contact.html', label: 'Contact' },
-    { path: 'https://linkedin.com/in/bhanuprakashsfdc', label: 'LinkedIn', external: true },
-    { path: 'https://github.com/bhanuprakashsfdc', label: 'GitHub', external: true },
-    { path: 'https://twitter.com/bhanuprakashsfdc', label: 'Twitter/X', external: true }
+    { path: social.linkedin, label: 'LinkedIn', external: true },
+    { path: social.github, label: 'GitHub', external: true },
+    { path: social.twitter, label: 'Twitter/X', external: true }
   ],
   legal: [
     { path: '/privacy-policy.html', label: 'Privacy Policy' }
@@ -27,23 +28,23 @@ const footerLinks = {
 const socialLinks = [
   { 
     name: 'LinkedIn', 
-    path: 'https://linkedin.com/in/bhanuprakashsfdc', 
-    icon: 'linkedin' 
+    path: social.linkedin, 
+    icon: 'link' 
   },
   { 
     name: 'GitHub', 
-    path: 'https://github.com/bhanuprakashsfdc', 
-    icon: 'code' 
+    path: social.github, 
+    icon: 'hub' 
   },
   { 
     name: 'Twitter', 
-    path: 'https://twitter.com/bhanuprakashsfdc', 
-    icon: 'tag' 
+    path: social.twitter, 
+    icon: 'chat_bubble' 
   },
   { 
     name: 'YouTube', 
-    path: 'https://youtube.com/@bhanuprakashsfdc', 
-    icon: 'smart_display' 
+    path: social.youtube, 
+    icon: 'play_circle' 
   }
 ];
 
