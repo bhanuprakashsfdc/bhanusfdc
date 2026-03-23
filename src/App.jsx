@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
@@ -11,7 +11,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
-    <HashRouter>
+    <Router>
       <Layout>
         <Routes>
           <Route path="/index.html" element={<Home />} />
@@ -25,7 +25,7 @@ function App() {
           <Route path="/privacy-policy.html" element={<PrivacyPolicy />} />
         </Routes>
       </Layout>
-    </HashRouter>
+    </Router>
   );
 }
 

@@ -345,7 +345,7 @@ export default function BlogPost() {
                   {posts.slice(0, 5).map((p) => (
                     <li key={p.id}>
                       <Link 
-                        to={`/blog/${p.slug}`}
+                        to={`/blog/${p.slug}.html`}
                         className="text-sm text-[var(--color-on-surface-variant)] hover:text-[var(--color-secondary)] transition-colors line-clamp-2"
                       >
                         {p.title}

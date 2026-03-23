@@ -48,7 +48,7 @@ function SidebarPopularPosts() {
         {popularPosts.map((post) => (
           <li key={post.id}>
             <Link 
-              to={`/blog/${post.slug}`}
+              to={`/blog/${post.slug}.html`}
               className="text-sm text-[var(--color-on-surface-variant)] hover:text-[var(--color-secondary)] transition-colors line-clamp-2"
             >
               {post.title}
@@ -137,7 +137,7 @@ export default function Blog() {
                   className="flex flex-col md:flex-row gap-4 bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-xl overflow-hidden hover:border-[var(--color-secondary)]/50 transition-colors"
                 >
                   {/* Thumbnail */}
-                  <Link to={`/blog/${post.slug}`} className="md:w-48 shrink-0">
+                  <Link to={`/blog/${post.slug}.html`} className="md:w-48 shrink-0">
                     <div className="aspect-video md:aspect-auto h-full bg-gradient-to-br from-[var(--color-secondary)]/30 to-[var(--color-tertiary)]/30" />
                   </Link>
                   
@@ -149,7 +149,7 @@ export default function Blog() {
                           {post.category}
                         </span>
                       </div>
-                      <Link to={`/blog/${post.slug}`}>
+                      <Link to={`/blog/${post.slug}.html`}>
                         <h2 className="text-lg font-semibold text-[var(--color-on-surface)] hover:text-[var(--color-secondary)] transition-colors font-[var(--font-headline)]">
                           {post.title}
                         </h2>
@@ -168,7 +168,7 @@ export default function Blog() {
                         <span>{post.date}</span>
                       </div>
                       <Link 
-                        to={`/blog/${post.slug}`}
+                        to={`/blog/${post.slug}.html`}
                         className="text-[var(--color-secondary)] hover:underline"
                       >
                         Read →
