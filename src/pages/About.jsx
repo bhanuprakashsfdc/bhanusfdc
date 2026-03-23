@@ -149,6 +149,14 @@ export default function About() {
           <p className="mt-2 text-[var(--color-secondary)]">
             {certCount}+ Certifications · 10+ Years Experience
           </p>
+          <a
+            href="/Bhanu_Prakash_Salesforce.pdf"
+            download
+            className="mt-4 inline-flex items-center gap-2 px-6 py-2 bg-[var(--color-secondary)] text-white font-semibold rounded-xl hover:bg-[var(--color-secondary)]/90 transition-all hover:scale-105"
+          >
+            <span className="material-symbols-outlined">download</span>
+            Download Resume
+          </a>
         </div>
       </section>
 
