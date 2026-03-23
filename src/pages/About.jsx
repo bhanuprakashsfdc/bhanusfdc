@@ -141,13 +141,13 @@ export default function About() {
             BP
           </div>
           <h1 className="mt-6 text-3xl md:text-4xl font-bold text-white font-[var(--font-headline)]">
-            About Me
+            KOLLI BHANU PRAKASH REDDY
           </h1>
           <p className="mt-3 text-lg text-[var(--color-on-surface-variant)]">
-            Senior Salesforce Architect & Technical Lead
+            Salesforce Application Manager | Senior Salesforce Technical Lead & Architect
           </p>
           <p className="mt-2 text-[var(--color-secondary)]">
-            {certCount}+ Certifications · 10+ Years Experience
+            {certCount} Certifications · 10+ Years Experience
           </p>
           <a
             href="/Bhanu_Prakash_Salesforce.pdf"
@@ -160,28 +160,29 @@ export default function About() {
         </div>
       </section>
 
-      {/* Professional Story */}
+      {/* Professional Summary */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-[var(--color-on-surface)] font-[var(--font-headline)] mb-6">
-            My Journey
+            Professional Summary
           </h2>
           <div className="space-y-4 text-[var(--color-on-surface-variant)] leading-relaxed">
             <p>
-              My journey with Salesforce began in 2014 when I first discovered the platform while working as a software developer. 
-              I was immediately fascinated by the power of declarative development and how quickly one could build enterprise-grade 
-              applications without writing code. That fascination grew into a passion, and I have been specializing in Salesforce ever since.
+              Results-driven Salesforce Technical Lead & Architect with 10+ years of experience delivering enterprise CRM solutions on the
+              Salesforce Platform. Deep expertise in Salesforce Service Cloud, Sales Cloud, Agentforce (AI Agents), and Einstein AI — designing
+              scalable, AI-augmented architectures that accelerate business outcomes. Certified Application Architect and 12x Salesforce Certified
+              professional.
             </p>
             <p>
-              Over the past decade, I've had the privilege of working with Fortune 500 companies across healthcare, financial services, 
-              and manufacturing industries. As a Senior Salesforce Architect, I focus on designing scalable solutions that not only 
-              meet immediate business needs but also lay the foundation for future growth. My expertise spans the entire Salesforce 
-              ecosystem, from Sales Cloud and Service Cloud to the latest Agentforce and Data Cloud technologies.
+              Proven track record leading cross-functional engineering teams, designing multi-cloud Salesforce architectures, and delivering
+              enterprise integrations using REST/SOAP APIs, MuleSoft, and modern automation platforms including N8N and Zapier. Experienced
+              in AI-powered low-code development using Lovable.dev and Claude Code (Anthropic), enabling rapid prototyping and intelligent
+              workflow automation within Salesforce ecosystems.
             </p>
             <p>
-              I believe in continuous learning and knowledge sharing. With 16 Salesforce certifications and counting, I am committed 
-              to staying at the forefront of Salesforce innovation. Through this blog, I aim to share practical insights, 
-              best practices, and real-world solutions that help other Salesforce professionals elevate their work.
+              Skilled at driving Salesforce platform roadmap, solution governance, DevOps best practices (CI/CD, Salesforce DX, Copado), and
+              implementing Agentforce Agent Builder, Prompt Builder, and Einstein Copilot to deliver next-generation AI-driven CRM capabilities
+              at enterprise scale.
             </p>
           </div>
         </div>

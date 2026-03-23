@@ -162,6 +162,13 @@ export default function Home() {
             >
               Read My Blog
             </Link>
+            <a
+              href="/Bhanu_Prakash_Salesforce.pdf"
+              download
+              className="px-8 py-3 border-2 border-[var(--color-secondary)] text-[var(--color-secondary)] font-semibold rounded-xl hover:bg-[var(--color-secondary)] hover:text-[var(--color-on-secondary)] transition-all hover:scale-105"
+            >
+              <span className="flex items-center gap-2"><span className="material-symbols-outlined">download</span>Download Resume</span>
+            </a>
             <Link
               to="/portfolio.html"
               className="px-8 py-3 border-2 border-[var(--color-secondary)] text-[var(--color-secondary)] font-semibold rounded-xl hover:bg-[var(--color-secondary)] hover:text-[var(--color-on-secondary)] transition-all hover:scale-105"

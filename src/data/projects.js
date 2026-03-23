@@ -2,6 +2,7 @@
 export const projects = [
   {
     id: 1,
+    slug: 'agentforce-customer-service-agent',
     name: 'Agentforce Customer Service Agent',
     type: 'Agentforce',
     category: 'Agentforce',
@@ -17,6 +18,7 @@ export const projects = [
   },
   {
     id: 2,
+    slug: 'enterprise-lwc-component-library',
     name: 'Enterprise LWC Component Library',
     type: 'LWC Components',
     category: 'LWC',
@@ -32,6 +34,7 @@ export const projects = [
   },
   {
     id: 3,
+    slug: 'complex-approval-workflow-engine',
     name: 'Complex Approval Workflow Engine',
     type: 'Flow Automation',
     category: 'Flow',
@@ -47,6 +50,7 @@ export const projects = [
   },
   {
     id: 4,
+    slug: 'mulesoft-salesforce-integration-hub',
     name: 'MuleSoft Salesforce Integration Hub',
     type: 'Integration',
     category: 'Integration',
@@ -62,6 +66,7 @@ export const projects = [
   },
   {
     id: 5,
+    slug: 'multi-org-salesforce-architecture',
     name: 'Multi-Org Salesforce Architecture',
     type: 'Architecture Design',
     category: 'Architecture',
@@ -77,6 +82,7 @@ export const projects = [
   },
   {
     id: 6,
+    slug: 'healthcare-patient-360-portal',
     name: 'Healthcare Patient 360 Portal',
     type: 'Experience Cloud',
     category: 'Architecture',
@@ -92,6 +98,7 @@ export const projects = [
   },
   {
     id: 7,
+    slug: 'financial-services-cpq-platform',
     name: 'Financial Services CPQ Platform',
     type: 'CPQ Implementation',
     category: 'Architecture',
@@ -107,6 +114,7 @@ export const projects = [
   },
   {
     id: 8,
+    slug: 'data-cloud-implementation',
     name: 'Data Cloud Implementation',
     type: 'Data Cloud',
     category: 'Architecture',

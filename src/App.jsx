@@ -6,6 +6,7 @@ import BlogPost from './pages/BlogPost';
 import About from './pages/About';
 import Certifications from './pages/Certifications';
 import Portfolio from './pages/Portfolio';
+import PortfolioProject from './pages/PortfolioProject';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about.html" element={<About />} />
           <Route path="/certifications.html" element={<Certifications />} />
           <Route path="/portfolio.html" element={<Portfolio />} />
+          <Route path="/portfolio/:slug.html" element={<PortfolioProject />} />
           <Route path="/contact.html" element={<Contact />} />
           <Route path="/privacy-policy.html" element={<PrivacyPolicy />} />
         </Routes>

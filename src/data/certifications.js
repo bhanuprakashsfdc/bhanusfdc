@@ -1,172 +1,179 @@
 // Certifications data for Certifications page
 export const certifications = [
+  // Agentforce (2)
   {
     id: 1,
-    name: 'Salesforce Certified Administrator',
-    shortName: 'Admin',
-    level: 'Administrator',
-    year: 2014,
+    name: 'Salesforce Certified Agentforce Specialist',
+    shortName: 'Agentforce Specialist',
+    level: 'Specialist',
+    year: 2024,
     status: 'Active',
-    description: 'Core administrator certification covering user management, security, automation, and data management.',
+    description: 'Certified Agentforce Specialists are responsible for managing and optimizing Agentforce and have a deep understanding of both Salesforce platform configuration and Agentforce capabilities.',
     color: '#00A1E0'
   },
   {
     id: 2,
-    name: 'Salesforce Certified Platform Developer I',
-    shortName: 'PD I',
-    level: 'Developer',
-    year: 2015,
+    name: 'Salesforce Certified AI Associate',
+    shortName: 'AI Associate',
+    level: 'Specialist',
+    year: 2024,
     status: 'Active',
-    description: 'Validates skills in building custom applications on the Salesforce platform using Apex and Visualforce.',
-    color: '#06B6D4'
+    description: 'Certified AI Associates should be able to provide informed strategies and guide stakeholder decisions based on Salesforce\'s Trusted AI Principles.',
+    color: '#8B5CF6'
   },
+
+  // CRM Analytics (1)
   {
     id: 3,
-    name: 'Salesforce Certified Platform Developer II',
-    shortName: 'PD II',
-    level: 'Developer',
-    year: 2017,
+    name: 'Salesforce Certified CRM Analytics and Einstein Discovery Consultant',
+    shortName: 'CRM Analytics',
+    level: 'Consultant',
+    year: 2020,
     status: 'Active',
-    description: 'Advanced developer certification demonstrating expertise in building complex, scalable applications.',
+    description: 'Certified CRM Analytics and Einstein Discovery Consultants have experience designing and implementing on the CRM Analytics and Einstein Discovery platforms.',
     color: '#06B6D4'
   },
+
+  // Salesforce Platform (11)
   {
     id: 4,
-    name: 'Salesforce Certified Platform App Builder',
-    shortName: 'App Builder',
-    level: 'Developer',
-    year: 2016,
+    name: 'Salesforce Certified Application Architect',
+    shortName: 'Application Architect',
+    level: 'Architect',
+    year: 2023,
     status: 'Active',
-    description: 'Certification for designing and building custom applications using declarative tools.',
-    color: '#00A1E0'
+    description: 'Certified Application Architects have a deep understanding of native Salesforce features and functionality.',
+    color: '#EF4444'
   },
   {
     id: 5,
-    name: 'Salesforce Certified Sales Cloud Consultant',
-    shortName: 'Sales Cloud',
-    level: 'Consultant',
-    year: 2016,
+    name: 'Salesforce Certified Platform Administrator',
+    shortName: 'Platform Admin',
+    level: 'Administrator',
+    year: 2020,
     status: 'Active',
-    description: 'Consultant certification for implementing Sales Cloud solutions with best practices.',
+    description: 'Certified Platform Administrators are Salesforce professionals who build and manage trusted solutions on the Salesforce Platform.',
     color: '#00A1E0'
   },
   {
     id: 6,
-    name: 'Salesforce Certified Service Cloud Consultant',
-    shortName: 'Service Cloud',
-    level: 'Consultant',
-    year: 2017,
+    name: 'Salesforce Certified Platform App Builder',
+    shortName: 'Platform App Builder',
+    level: 'Developer',
+    year: 2023,
     status: 'Active',
-    description: 'Expertise in designing and implementing Service Cloud solutions for customer service.',
+    description: 'Certified Platform App Builders have the skills and knowledge to design, build, and implement custom applications using the declarative customization capabilities.',
     color: '#00A1E0'
   },
   {
     id: 7,
-    name: 'Salesforce Certified Experience Cloud Consultant',
-    shortName: 'Experience Cloud',
-    level: 'Consultant',
-    year: 2019,
+    name: 'Salesforce Certified Platform Data Architect',
+    shortName: 'Data Architect',
+    level: 'Architect',
+    year: 2023,
     status: 'Active',
-    description: 'Building partner and customer portals using Experience Cloud.',
-    color: '#8B5CF6'
+    description: 'Certified Platform Data Architects are experts at designing sound, scalable, high-performing solutions on the Salesforce Platform.',
+    color: '#EF4444'
   },
   {
     id: 8,
-    name: 'Salesforce Certified Field Service Consultant',
-    shortName: 'Field Service',
-    level: 'Consultant',
+    name: 'Salesforce Certified Platform Developer',
+    shortName: 'Platform Developer I',
+    level: 'Developer',
     year: 2020,
     status: 'Active',
-    description: 'Implementing mobile field service management solutions.',
-    color: '#F59E0B'
+    description: 'Certified Platform Developers understand how to develop and deploy custom business logic and custom interfaces using the programmatic capabilities.',
+    color: '#06B6D4'
   },
   {
     id: 9,
-    name: 'Salesforce Certified Marketing Cloud Email Specialist',
-    shortName: 'Marketing Cloud',
-    level: 'Specialist',
-    year: 2018,
+    name: 'Salesforce Certified Platform Developer II',
+    shortName: 'Platform Developer II',
+    level: 'Developer',
+    year: 2022,
     status: 'Active',
-    description: 'Email marketing automation using Salesforce Marketing Cloud.',
-    color: '#F97316'
+    description: 'Certified Platform Developer II developers are experts in the advanced programmatic capabilities of the Salesforce Platform.',
+    color: '#06B6D4'
   },
   {
     id: 10,
-    name: 'Salesforce Certified CPQ Specialist',
-    shortName: 'CPQ',
-    level: 'Specialist',
-    year: 2018,
+    name: 'Salesforce Certified Platform Development Lifecycle and Deployment Architect',
+    shortName: 'Deployment Architect',
+    level: 'Architect',
+    year: 2025,
     status: 'Active',
-    description: 'Configure, Price, Quote solutions for complex pricing and product catalog management.',
-    color: '#10B981'
+    description: 'Certified Platform Development Lifecycle and Deployment Architects are experts at assessing architecture environments and requirements.',
+    color: '#EF4444'
   },
   {
     id: 11,
-    name: 'Salesforce Certified Sharing & Visibility Architect',
-    shortName: 'Sharing & Visibility',
+    name: 'Salesforce Certified Platform Identity and Access Management Architect',
+    shortName: 'IAM Architect',
     level: 'Architect',
-    year: 2020,
+    year: 2025,
     status: 'Active',
-    description: 'Expertise in designing secure sharing models and visibility controls for enterprise implementations.',
+    description: 'Certified Platform Identity and Access Management Architects are experts at designing sound, high-performing solutions on the Salesforce Platform.',
     color: '#EF4444'
   },
   {
     id: 12,
-    name: 'Salesforce Certified Data Architect',
-    shortName: 'Data Architect',
+    name: 'Salesforce Certified Platform Integration Architect',
+    shortName: 'Integration Architect',
     level: 'Architect',
-    year: 2021,
+    year: 2025,
     status: 'Active',
-    description: 'Designing data architecture strategies for large-scale Salesforce implementations.',
+    description: 'Certified Platform Integration Architects are experts at designing sound and scalable technical solutions on the Salesforce Platform.',
     color: '#EF4444'
   },
   {
     id: 13,
-    name: 'Salesforce Certified Integration Architect',
-    shortName: 'Integration',
+    name: 'Salesforce Certified Platform Sharing and Visibility Architect',
+    shortName: 'Sharing Architect',
     level: 'Architect',
-    year: 2021,
+    year: 2023,
     status: 'Active',
-    description: 'Expertise in designing integration architectures connecting Salesforce with external systems.',
+    description: 'Certified Platform Sharing and Visibility Architects are fluent in designing sound, scalable, and high-performing technical solutions.',
     color: '#EF4444'
   },
   {
     id: 14,
-    name: 'Salesforce Certified B2B Commerce Developer',
-    shortName: 'B2B Commerce',
-    level: 'Developer',
-    year: 2022,
-    status: 'Active',
-    description: 'Building B2B e-commerce solutions on the Salesforce platform.',
-    color: '#8B5CF6'
-  },
-  {
-    id: 15,
-    name: 'Salesforce Certified Agentforce Specialist',
-    shortName: 'Agentforce',
-    level: 'Specialist',
+    name: 'Salesforce Certified System Architect',
+    shortName: 'System Architect',
+    level: 'Architect',
     year: 2025,
     status: 'Active',
-    description: 'Building AI-powered agents using Agentforce and Einstein AI technologies.',
-    color: '#00A1E0'
+    description: 'Certified System Architects focus on off-platform systems, integration, and securing access between systems.',
+    color: '#EF4444'
+  },
+
+  // Service Cloud (2)
+  {
+    id: 15,
+    name: 'Salesforce Certified Field Service Consultant',
+    shortName: 'Field Service',
+    level: 'Consultant',
+    year: 2023,
+    status: 'Active',
+    description: 'Certified Field Service Consultants have proven experience with the administration and configuration of the Salesforce Platform.',
+    color: '#F59E0B'
   },
   {
     id: 16,
-    name: 'Salesforce Certified JavaScript Developer I',
-    shortName: 'JavaScript',
-    level: 'Developer',
-    year: 2023,
+    name: 'Salesforce Certified Service Cloud Consultant',
+    shortName: 'Service Cloud',
+    level: 'Consultant',
+    year: 2022,
     status: 'Active',
-    description: 'JavaScript fundamentals for web development, including modern ES6+ features.',
-    color: '#F7DF1E'
+    description: 'Certified Service Cloud Consultants are experts at designing and implementing Service Cloud solutions.',
+    color: '#00A1E0'
   }
 ];
 
 export const certificationStats = {
   total: 16,
   administrators: 1,
-  developers: 5,
-  consultants: 4,
-  architects: 3,
-  specialists: 3
+  developers: 4,
+  consultants: 3,
+  architects: 7,
+  specialists: 2
 };
