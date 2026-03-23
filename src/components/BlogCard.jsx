@@ -22,7 +22,7 @@ export default function BlogCard({ post, featured = false }) {
       ${featured ? 'col-span-1' : ''}
     `}>
       {/* Thumbnail */}
-      <Link to={`/blog/${post.slug}`} className="block relative">
+      <Link to={`/blog/${post.slug}.html`} className="block relative">
         <div className={`
           aspect-video bg-gradient-to-br ${gradientClass} relative overflow-hidden
         `}>
@@ -38,7 +38,7 @@ export default function BlogCard({ post, featured = false }) {
       {/* Content */}
       <div className="p-5">
         {/* Title */}
-        <Link to={`/blog/${post.slug}`}>
+        <Link to={`/blog/${post.slug}.html`}>
           <h3 className="font-[var(--font-headline)] font-bold text-lg text-[var(--color-on-surface)] group-hover:text-[var(--color-secondary)] transition-colors line-clamp-2">
             {post.title}
           </h3>
@@ -60,7 +60,7 @@ export default function BlogCard({ post, featured = false }) {
 
         {/* Read More Link */}
         <Link 
-          to={`/blog/${post.slug}`}
+          to={`/blog/${post.slug}.html`}
           className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[var(--color-secondary)] group-hover:gap-2 transition-all"
         >
           Read More

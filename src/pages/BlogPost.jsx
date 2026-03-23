@@ -1,6 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { posts } from '../data/posts';
+import { social, site } from '../data/social';
+import { FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 import BlogCard from '../components/BlogCard';
 import AdSlot from '../components/AdSlot';
 import ReadingProgress from '../components/ReadingProgress';
@@ -79,7 +81,7 @@ function ContentRenderer({ content }) {
 function ShareButtons({ title, slug }) {
   const [copied, setCopied] = useState(false);
 
-  const shareUrl = `https://bhanuprakashsfdc.com/blog/${slug}`;
+  const shareUrl = `${site.url}/blog/${slug}`;
   
   const copyLink = async () => {
     await navigator.clipboard.writeText(shareUrl);
@@ -105,7 +107,7 @@ function ShareButtons({ title, slug }) {
         rel="noopener noreferrer"
         className="flex items-center gap-1 px-3 py-1.5 text-sm bg-[var(--color-surface-container)] text-[var(--color-on-surface-variant)] rounded-lg hover:bg-[var(--color-surface-container-high)] transition-colors"
       >
-        <span className="material-symbols-outlined text-sm">linkedin</span>
+        <FaLinkedin className="text-sm" />
         LinkedIn
       </a>
       <a
@@ -296,11 +298,11 @@ export default function BlogPost() {
                       {post.author.role}
                     </p>
                     <p className="mt-2 text-sm text-[var(--color-on-surface-variant)]">
-                      Senior Salesforce Architect with 10+ years experience and 16 certifications. 
+                      Salesforce Architect with 10+ years experience and 16 certifications. 
                       Expert in Agentforce, LWC, Apex, and enterprise architecture.
                     </p>
                     <a
-                      href="https://linkedin.com/in/bhanuprakashsfdc"
+                      href={social.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-3 inline-flex items-center gap-1 text-sm text-[var(--color-secondary)] hover:underline"
@@ -345,7 +347,7 @@ export default function BlogPost() {
                   {posts.slice(0, 5).map((p) => (
                     <li key={p.id}>
                       <Link 
-                        to={`/blog/${p.slug}`}
+                        to={`/blog/${p.slug}.html`}
                         className="text-sm text-[var(--color-on-surface-variant)] hover:text-[var(--color-secondary)] transition-colors line-clamp-2"
                       >
                         {p.title}

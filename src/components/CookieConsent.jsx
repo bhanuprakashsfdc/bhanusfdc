@@ -23,7 +23,7 @@ export default function CookieConsent() {
           <p className="text-sm text-[var(--color-on-surface)] flex-1">
             We use cookies including Google AdSense cookies to personalize ads. 
             By continuing, you accept our{' '}
-            <Link to="/privacy-policy" className="text-[var(--color-secondary)] hover:underline">
+            <Link to="/privacy-policy.html" className="text-[var(--color-secondary)] hover:underline">
               Privacy Policy
             </Link>.
           </p>

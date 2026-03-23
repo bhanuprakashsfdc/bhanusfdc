@@ -130,47 +130,56 @@ export const skillCategories = [
 // Timeline data for About page
 export const timeline = [
   {
-    company: 'Tech Mahindra / Leading Fintech',
-    role: 'Senior Salesforce Architect & Technical Lead',
-    period: '2022 - Present',
+    company: 'TEKsystems Global Services',
+    role: 'Salesforce Senior Technical Lead',
+    period: 'Dec 2021 – Present',
     achievements: [
-      'Leading enterprise Salesforce implementations for Fortune 500 clients',
-      'Architected Agentforce solutions for AI-powered customer service',
-      'Mentored team of 8 developers and administrators',
-      'Reduced deployment time by 40% through CI/CD implementation'
+      'Lead end-to-end Salesforce solution architecture for enterprise CRM implementations',
+      'Architected and deployed Agentforce AI Agents using Agent Builder and Prompt Builder',
+      'Designed Einstein Copilot customizations with custom Actions and Topics',
+      'Implemented Salesforce Service Cloud capabilities including Omni-Channel Routing',
+      'Championed CI/CD adoption using Salesforce DX, Copado, and GitHub Actions, reducing release cycle time by 40%'
     ]
   },
   {
-    company: 'Accenture / Major Healthcare',
+    company: 'Shell India Pvt Ltd',
     role: 'Salesforce Technical Lead',
-    period: '2019 - 2022',
+    period: 'Jul 2019 – Dec 2021',
     achievements: [
-      'Led complex Health Cloud implementation for 50K+ user base',
-      'Implemented integration architecture connecting 12+ systems',
-      'Achieved 99.99% uptime for critical healthcare workflows',
-      'Developed reusable component library saving 200+ dev hours'
+      'Owned Salesforce platform architecture and technical strategy',
+      'Implemented Einstein AI features including Next Best Action and predictive scoring',
+      'Built N8N-based automation workflows integrating Salesforce with SAP ERP',
+      'Improved operational efficiency by 25% through CRM automation and Omni-Channel routing'
     ]
   },
   {
-    company: 'Capgemini / Financial Services',
-    role: 'Senior Salesforce Developer',
-    period: '2016 - 2019',
+    company: 'L&T Infotech',
+    role: 'Salesforce Consultant',
+    period: 'Aug 2018 – Jul 2019',
     achievements: [
-      'Built enterprise CPQ solution with $500M+ annual revenue',
-      'Designed custom Lightning components for wealth management',
-      'Optimized SOQL queries reducing load times by 60%',
-      'Received Excellence in Innovation Award'
+      'Designed scalable Salesforce solutions including custom objects and workflows',
+      'Migrated legacy Visualforce applications to modern Lightning Web Components',
+      'Provided technical leadership across full Salesforce implementation lifecycle'
     ]
   },
   {
-    company: 'Infosys / Multiple Clients',
-    role: 'Salesforce Developer',
-    period: '2014 - 2016',
+    company: 'Brillio',
+    role: 'Salesforce Business Analyst',
+    period: 'Jan 2018 – Aug 2018',
     achievements: [
-      'Delivered 20+ Salesforce implementations across industries',
-      'Specialized in Sales Cloud and Service Cloud configurations',
-      'Achieved Salesforce Administrator certification at age 22',
-      'Built automation solutions saving 10K+ manual hours annually'
+      'Gathered and analyzed business requirements, translating to technical specifications',
+      'Developed reusable Lightning components using Aura framework',
+      'Supported integration mapping between Salesforce and external systems'
+    ]
+  },
+  {
+    company: 'Infosys BPM',
+    role: 'Salesforce Administrator',
+    period: 'Jun 2016 – Jan 2018',
+    achievements: [
+      'Administered Salesforce CRM platform including user management and security',
+      'Customized Lightning pages and App Builder configurations',
+      'Built declarative automations using Workflow Rules and Process Builder'
     ]
   }
 ];
@@ -178,18 +187,18 @@ export const timeline = [
 // Values section data
 export const values = [
   {
-    icon: 'lightbulb',
-    title: 'Innovation First',
-    description: 'Continuously exploring new Salesforce technologies to deliver cutting-edge solutions that drive business value.'
+    icon: 'clinical_notes',
+    title: 'Solution Architecture',
+    description: 'Designing scalable, enterprise-grade Salesforce architectures that align with business transformation goals.'
   },
   {
-    icon: 'school',
-    title: 'Knowledge Sharing',
-    description: 'Passionate about mentoring teams and sharing best practices through blog posts, workshops, and community events.'
+    icon: 'psychology',
+    title: 'AI & Innovation',
+    description: 'Pioneering Agentforce and AI-powered solutions to deliver next-generation CRM capabilities at scale.'
   },
   {
-    icon: 'verified',
-    title: 'Quality Assurance',
-    description: 'Committed to delivering robust, scalable solutions with comprehensive testing and documentation.'
+    icon: 'groups',
+    title: 'Team Leadership',
+    description: 'Leading cross-functional teams and driving agile delivery with focus on stakeholder management and execution excellence.'
   }
 ];

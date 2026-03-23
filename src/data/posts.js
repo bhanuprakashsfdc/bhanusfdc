@@ -12,7 +12,7 @@ export const posts = [
     featured: true,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -136,7 +136,7 @@ public with sharing class CasePriorityAction {
     featured: true,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -196,7 +196,7 @@ public with sharing class CasePriorityAction {
     featured: true,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -255,7 +255,7 @@ public with sharing class CasePriorityAction {
     featured: false,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -277,7 +277,7 @@ public with sharing class CasePriorityAction {
     featured: false,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -308,7 +308,7 @@ public with sharing class CasePriorityAction {
     featured: false,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -330,7 +330,7 @@ public with sharing class CasePriorityAction {
     featured: false,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -352,7 +352,7 @@ public with sharing class CasePriorityAction {
     featured: false,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -374,7 +374,7 @@ public with sharing class CasePriorityAction {
     featured: false,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -396,7 +396,7 @@ public with sharing class CasePriorityAction {
     featured: false,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -418,7 +418,7 @@ public with sharing class CasePriorityAction {
     featured: false,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [
@@ -440,7 +440,7 @@ public with sharing class CasePriorityAction {
     featured: false,
     author: {
       name: 'Bhanu Prakash Reddy',
-      role: 'Senior Salesforce Architect',
+      role: 'Salesforce Architect',
       avatar: 'BP'
     },
     content: [

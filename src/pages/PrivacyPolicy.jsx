@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { site } from '../data/social';
 
 const sections = [
   { id: 'intro', label: 'Introduction' },
@@ -74,7 +75,7 @@ export default function PrivacyPolicy() {
               </h2>
               <p className="text-[var(--color-on-surface-variant)] leading-relaxed">
                 This Privacy Policy explains how Bhanu Prakash Reddy ("we," "us," or "our") collects, uses, 
-                and protects your information when you visit our website bhanuprakashsfdc.com. We are committed 
+                and protects your information when you visit our website {site.url}. We are committed 
                 to ensuring your privacy is protected.
               </p>
             </section>
@@ -146,7 +147,7 @@ export default function PrivacyPolicy() {
                 and/or to personalize the advertising content that you see on websites you visit.
               </p>
               <p className="text-[var(--color-on-surface-variant)] leading-relaxed mt-4">
-                Note that bhanuprakashsfdc.com has no access to or control over these cookies that are used 
+                Note that {site.url} has no access to or control over these cookies that are used 
                 by third-party advertisers.
               </p>
             </section>
@@ -189,7 +190,7 @@ export default function PrivacyPolicy() {
                 If you have any questions about this Privacy Policy, please contact us:
               </p>
               <ul className="mt-4 space-y-2 text-[var(--color-on-surface-variant)]">
-                <li>Email: contact@bhanuprakashsfdc.com</li>
+                <li>Email: contact@{site.url}</li>
                 <li>Through the contact form on our website</li>
               </ul>
             </section>
