@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { posts } from '../data/posts';
 import { social, site } from '../data/social';
+import { FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 import BlogCard from '../components/BlogCard';
 import AdSlot from '../components/AdSlot';
 import ReadingProgress from '../components/ReadingProgress';
@@ -106,7 +107,7 @@ function ShareButtons({ title, slug }) {
         rel="noopener noreferrer"
         className="flex items-center gap-1 px-3 py-1.5 text-sm bg-[var(--color-surface-container)] text-[var(--color-on-surface-variant)] rounded-lg hover:bg-[var(--color-surface-container-high)] transition-colors"
       >
-        <span className="material-symbols-outlined text-sm">link</span>
+        <FaLinkedin className="text-sm" />
         LinkedIn
       </a>
       <a
@@ -297,7 +298,7 @@ export default function BlogPost() {
                       {post.author.role}
                     </p>
                     <p className="mt-2 text-sm text-[var(--color-on-surface-variant)]">
-                      Senior Salesforce Architect with 10+ years experience and 16 certifications. 
+                      Salesforce Architect with 10+ years experience and 16 certifications. 
                       Expert in Agentforce, LWC, Apex, and enterprise architecture.
                     </p>
                     <a

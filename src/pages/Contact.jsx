@@ -1,5 +1,6 @@
 import { useContactForm, useToast } from '../hooks/useLocalStorage';
 import { social } from '../data/social';
+import { FaLinkedin } from 'react-icons/fa';
 import AdSlot from '../components/AdSlot';
 
 const subjects = [
@@ -143,7 +144,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 bg-[#0077b5] text-white font-semibold rounded-lg hover:bg-[#005885] transition-colors"
               >
-                <span className="material-symbols-outlined">link</span>
+                <FaLinkedin className="text-xl" />
                 Connect on LinkedIn
               </a>
 

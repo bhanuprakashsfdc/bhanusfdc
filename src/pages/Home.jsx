@@ -139,7 +139,7 @@ export default function Home() {
 
           {/* Main Heading */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white font-[var(--font-headline)] tracking-tight">
-            Senior Salesforce Architect
+            Salesforce Architect
           </h1>
 
           {/* Subheading */}

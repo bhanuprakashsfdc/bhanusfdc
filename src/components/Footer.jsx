@@ -1,5 +1,20 @@
 import { Link } from 'react-router-dom';
-import { social } from '../data/social';
+import { social, socialIcons } from '../data/social';
+import { FaLinkedin, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { SiUpwork } from 'react-icons/si';
+
+// Icon mapping
+const IconComponent = ({ name, className }) => {
+  const icons = {
+    FaLinkedin: FaLinkedin,
+    SiUpwork: SiUpwork,
+    FaGithub: FaGithub,
+    FaTwitter: FaTwitter,
+    FaYoutube: FaYoutube
+  };
+  const Icon = icons[name];
+  return Icon ? <Icon className={className} /> : null;
+};
 
 const footerLinks = {
   pages: [
@@ -17,8 +32,9 @@ const footerLinks = {
   connect: [
     { path: '/contact.html', label: 'Contact' },
     { path: social.linkedin, label: 'LinkedIn', external: true },
+     { path: social.upwork, label: 'Upwork', external: true },
     { path: social.github, label: 'GitHub', external: true },
-    { path: social.twitter, label: 'Twitter/X', external: true }
+    { path: social.twitter, label: 'Twitter/X', external: true }   
   ],
   legal: [
     { path: '/privacy-policy.html', label: 'Privacy Policy' }
@@ -29,22 +45,27 @@ const socialLinks = [
   { 
     name: 'LinkedIn', 
     path: social.linkedin, 
-    icon: 'link' 
+    icon: socialIcons.linkedin 
+  },
+  { 
+    name: 'Upwork', 
+    path: social.upwork, 
+    icon: socialIcons.upwork 
   },
   { 
     name: 'GitHub', 
     path: social.github, 
-    icon: 'hub' 
+    icon: socialIcons.github 
   },
   { 
     name: 'Twitter', 
     path: social.twitter, 
-    icon: 'chat_bubble' 
+    icon: socialIcons.twitter 
   },
   { 
     name: 'YouTube', 
     path: social.youtube, 
-    icon: 'play_circle' 
+    icon: socialIcons.youtube 
   }
 ];
 
@@ -62,7 +83,7 @@ export default function Footer() {
               BhanuPrakash <span className="text-[var(--color-tertiary)]">⚡</span>
             </Link>
             <p className="mt-3 text-sm text-[var(--color-on-surface-variant)]">
-              Senior Salesforce Architect helping enterprises build scalable, AI-powered solutions.
+              Salesforce Architect helping enterprises build scalable, AI-powered solutions.
             </p>
             
             {/* Social Links */}
@@ -73,10 +94,10 @@ export default function Footer() {
                   href={social.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="material-symbols-outlined text-[var(--color-on-surface-variant)] hover:text-[var(--color-secondary)] transition-colors"
+                  className="text-[var(--color-on-surface-variant)] hover:text-[var(--color-secondary)] transition-colors text-xl"
                   aria-label={social.name}
                 >
-                  {social.icon}
+                  <IconComponent name={social.icon} className="w-5 h-5" />
                 </a>
               ))}
             </div>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { posts, categories, tags } from '../data/posts';
 import { social } from '../data/social';
+import { FaLinkedin } from 'react-icons/fa';
 import AdSlot from '../components/AdSlot';
 
 // Sidebar components
@@ -17,7 +18,7 @@ function SidebarAuthor() {
             Bhanu Prakash Reddy
           </h3>
           <p className="text-sm text-[var(--color-on-surface-variant)]">
-            Senior Salesforce Architect
+            Salesforce Architect
           </p>
         </div>
       </div>
@@ -30,7 +31,7 @@ function SidebarAuthor() {
         rel="noopener noreferrer"
         className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-[var(--color-secondary-container)] text-white text-sm font-medium rounded-lg hover:bg-[var(--color-secondary)] transition-colors"
       >
-        <span className="material-symbols-outlined text-sm">link</span>
+        <FaLinkedin className="text-lg" />
         Connect on LinkedIn
       </a>
     </div>
