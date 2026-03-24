@@ -64,11 +64,11 @@ function StatCard({ icon, number, label, suffix = '' }) {
 // Expertise card
 const expertiseCards = [
   { icon: 'architecture', title: 'Salesforce Architecture', desc: 'Enterprise-scale platform design' },
+  { icon: 'smart_toy', title: 'Agentforce & Einstein AI', desc: 'AI-powered automation' },
+  { icon: 'robot', title: 'AI Agentic Automation', desc: 'Claude, ChatGPT, N8N, CrewAI' },
   { icon: 'web', title: 'LWC & Aura', desc: 'Modern component development' },
-  { icon: 'smart_toy', title: 'Agentforce & AI', desc: 'AI-powered automation' },
   { icon: 'account_tree', title: 'Flow Builder', desc: 'Declarative automation' },
-  { icon: 'code', title: 'Apex & SOQL', desc: 'Custom business logic' },
-  { icon: 'sync', title: 'Integration', desc: 'MuleSoft & REST APIs' }
+  { icon: 'sync', title: 'MuleSoft & APIs', desc: 'Enterprise integration' }
 ];
 
 // Hobbies / Side Projects
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <StatCard icon="work_history" number={10} label="Years Experience" suffix="+" />
             <StatCard icon="verified" number={16} label="Certifications" />
-            <StatCard icon="folder_copy" number={50} label="Projects Delivered" suffix="+" />
+            <StatCard icon="folder_copy" number={15} label="Projects Delivered" suffix="+" />
             <StatCard icon="smart_toy" number={1} label="Agentforce Ready" />
           </div>
         </div>
