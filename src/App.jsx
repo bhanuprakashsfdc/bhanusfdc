@@ -11,6 +11,8 @@ import Training from './pages/Training';
 import TrainingCourse from './pages/TrainingCourse';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import CookiePolicy from './pages/CookiePolicy';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <Route path="/training/:slug.html" element={<TrainingCourse />} />
           <Route path="/contact.html" element={<Contact />} />
           <Route path="/privacy-policy.html" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service.html" element={<TermsOfService />} />
+          <Route path="/cookie-policy.html" element={<CookiePolicy />} />
         </Routes>
       </Layout>
     </BrowserRouter>

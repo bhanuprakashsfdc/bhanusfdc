@@ -37,7 +37,9 @@ const footerLinks = {
     { path: social.twitter, label: 'Twitter/X', external: true }   
   ],
   legal: [
-    { path: '/privacy-policy.html', label: 'Privacy Policy' }
+    { path: '/privacy-policy.html', label: 'Privacy Policy' },
+    { path: '/terms-of-service.html', label: 'Terms of Service' },
+    { path: '/cookie-policy.html', label: 'Cookie Policy' }
   ]
 };
 
