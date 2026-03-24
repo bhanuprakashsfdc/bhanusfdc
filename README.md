@@ -48,4 +48,4 @@ Visit: https://bhanuprakashsf.netlify.app/
 
 - LinkedIn: https://www.linkedin.com/in/bhanuprakashsfdc
 - Trailhead: https://www.salesforce.com/trailblazer/bhanuprakashsfdc
-- Email: bhanuprakashsfdc@gmail.com
+- Email: kollibhanuprakash0@gmail.com

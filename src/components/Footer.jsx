@@ -37,7 +37,9 @@ const footerLinks = {
     { path: social.twitter, label: 'Twitter/X', external: true }   
   ],
   legal: [
-    { path: '/privacy-policy.html', label: 'Privacy Policy' }
+    { path: '/privacy-policy.html', label: 'Privacy Policy' },
+    { path: '/terms-of-service.html', label: 'Terms of Service' },
+    { path: '/cookie-policy.html', label: 'Cookie Policy' }
   ]
 };
 
@@ -80,7 +82,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/index.html" className="text-xl font-extrabold text-[var(--color-on-surface)] tracking-tighter font-[var(--font-headline)]">
-              BhanuPrakash <span className="text-[var(--color-tertiary)]">⚡</span>
+              Bhanu Prakash <span className="text-[var(--color-tertiary)]">⚡</span>
             </Link>
             <p className="mt-3 text-sm text-[var(--color-on-surface-variant)]">
               Salesforce Architect helping enterprises build scalable, AI-powered solutions.

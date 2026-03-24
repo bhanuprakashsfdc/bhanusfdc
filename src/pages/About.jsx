@@ -1,6 +1,18 @@
 import { useState, useEffect } from 'react';
 import { useCounter } from '../hooks/useLocalStorage';
 import { skills, skillCategories, timeline, values } from '../data/skills';
+
+const hobbies = [
+  { name: 'ForceLearn', icon: 'school', description: 'Salesforce learning tutorials and guides', url: 'https://forcelearn.com' },
+  { name: 'EasyPomodoro', icon: 'timer', description: 'A productivity timer using the Pomodoro Technique', url: 'https://easypomodoro.com' },
+  { name: 'CTC Calculator', icon: 'calculate', description: 'Calculate your Cost to Company salary in India', url: 'https://ctc-calculator.com' },
+  { name: 'TheTimeIs', icon: 'schedule', description: 'Current time across major world cities', url: 'https://thetimeis.net' },
+  { name: 'TodayGoldSilverRate', icon: 'diamond', description: 'Live gold and silver rates in India', url: 'https://todaygoldsilverrate.com' },
+  { name: 'Flappy Birdies', icon: 'sports_esports', description: 'A fun flappy bird clone game', url: 'https://flappybirdies.com' },
+  { name: 'Internet Speed Test', icon: 'speed', description: 'Test your internet connection speed', url: 'https://interentspeedtest.com' },
+  { name: 'Creating Websites', icon: 'web', description: 'Building personal portfolio sites and web experiments'
+  }
+];
 import AdSlot from '../components/AdSlot';
 
 // Animated skill bar
@@ -238,6 +250,37 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {values.map((value, index) => (
               <ValueCard key={index} value={value} index={index} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Hobbies Section */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-[var(--color-on-surface)] font-[var(--font-headline)] text-center mb-12">
+            Hobbies & Interests
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {hobbies.map((hobby, index) => (
+              <a
+                key={index}
+                href={hobby.url || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-xl p-6 text-center hover:border-[var(--color-secondary)]/50 transition-colors block"
+              >
+                <span className="material-symbols-outlined text-4xl text-[var(--color-secondary)]">
+                  {hobby.icon}
+                </span>
+                <h3 className="mt-4 text-lg font-semibold text-[var(--color-on-surface)] font-[var(--font-headline)]">
+                  {hobby.name}
+                </h3>
+                <p className="mt-2 text-sm text-[var(--color-on-surface-variant)]">
+                  {hobby.description}
+                </p>
+              </a>
             ))}
           </div>
         </div>

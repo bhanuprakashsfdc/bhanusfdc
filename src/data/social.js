@@ -20,6 +20,6 @@ export const socialIcons = {
 
 export const site = {
   url: 'https://bhanuprakashsfdc.com',
-  name: 'BhanuPrakash SFDC',
+  name: 'Bhanu Prakash SFDC',
   description: 'Salesforce Architect & Technical Lead - Expert in Agentforce, LWC, Apex, and Enterprise CRM Solutions'
 };

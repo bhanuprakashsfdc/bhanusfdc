@@ -29,21 +29,119 @@ export const skills = [
   // AI & Agentforce
   {
     category: 'AI & Agentforce',
-    name: 'Agentforce Development',
+    name: 'Agentforce',
     icon: 'smart_toy',
-    proficiency: 92
+    proficiency: 95
   },
   {
     category: 'AI & Agentforce',
     name: 'Einstein AI',
     icon: 'psychology',
-    proficiency: 85
+    proficiency: 90
+  },
+  {
+    category: 'AI & Agentforce',
+    name: 'Einstein Copilot',
+    icon: 'support_agent',
+    proficiency: 88
   },
   {
     category: 'AI & Agentforce',
     name: 'Data Cloud',
     icon: 'cloud',
+    proficiency: 85
+  },
+  {
+    category: 'AI & Agentforce',
+    name: 'Prompt Builder',
+    icon: 'edit_note',
+    proficiency: 90
+  },
+  {
+    category: 'AI & Agentforce',
+    name: 'Agent Builder',
+    icon: 'build',
+    proficiency: 92
+  },
+  {
+    category: 'AI & Agentforce',
+    name: 'Einstein Trust Layer',
+    icon: 'verified_user',
+    proficiency: 85
+  },
+  {
+    category: 'AI & Agentforce',
+    name: 'MuleSoft',
+    icon: 'sync',
+    proficiency: 82
+  },
+
+  // AI Tools & Agentic Automation
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'Claude Code',
+    icon: 'code',
+    proficiency: 90
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'Claude AI',
+    icon: 'psychology',
+    proficiency: 88
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'ChatGPT',
+    icon: 'chat',
+    proficiency: 92
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'Google Gemini',
+    icon: 'auto_awesome',
+    proficiency: 85
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'Cursor AI',
+    icon: 'computer',
+    proficiency: 88
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'N8N',
+    icon: 'workflow',
+    proficiency: 90
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'CrewAI',
+    icon: 'groups',
+    proficiency: 82
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'Lovable.dev',
+    icon: 'magic_button',
+    proficiency: 85
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'MCP Protocol',
+    icon: 'hub',
     proficiency: 80
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'Ollama',
+    icon: 'memory',
+    proficiency: 78
+  },
+  {
+    category: 'AI Tools & Agentic Automation',
+    name: 'Copado',
+    icon: 'cloud_sync',
+    proficiency: 88
   },
   
   // Dev Tools
@@ -122,6 +220,7 @@ export const skills = [
 export const skillCategories = [
   { name: 'Salesforce Platform', icon: 'cloud' },
   { name: 'AI & Agentforce', icon: 'smart_toy' },
+  { name: 'AI Tools & Agentic Automation', icon: 'robot' },
   { name: 'Dev Tools', icon: 'construction' },
   { name: 'Integration', icon: 'sync' },
   { name: 'Frontend', icon: 'web' }
