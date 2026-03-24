@@ -71,6 +71,18 @@ const expertiseCards = [
   { icon: 'sync', title: 'Integration', desc: 'MuleSoft & REST APIs' }
 ];
 
+// Hobbies / Side Projects
+const hobbies = [
+  { name: 'ForceLearn', icon: 'school', description: 'Salesforce tutorials', url: 'https://forcelearn.com' },
+  { name: 'EasyPomodoro', icon: 'timer', description: 'Pomodoro Technique timer', url: 'https://easypomodoro.com' },
+  { name: 'CTC Calculator', icon: 'calculate', description: 'India salary calculator', url: 'https://ctc-calculator.com' },
+  { name: 'TheTimeIs', icon: 'schedule', description: 'World clock utility', url: 'https://thetimeis.net' },
+  { name: 'Gold & Silver Rates', icon: 'diamond', description: 'India metal rates', url: 'https://todaygoldsilverrate.com' },
+  { name: 'Flappy Birdies', icon: 'sports_esports', description: 'Browser game', url: 'https://flappybirdies.com' },
+  { name: 'Speed Test', icon: 'speed', description: 'Internet speed test', url: 'https://interentspeedtest.com' },  
+  { name: 'This Website', icon: 'web', description: 'Personal portfolio', url: '/' }
+];
+
 // Newsletter section
 function NewsletterSection() {
   const { email, setEmail, status, message, subscribe } = useNewsletter();
@@ -246,6 +258,40 @@ export default function Home() {
                   {card.desc}
                 </p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Hobbies / Side Projects */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-on-surface)] font-[var(--font-headline)] text-center mb-4">
+            Side Projects & Hobbies
+          </h2>
+          <p className="text-center text-[var(--color-on-surface-variant)] mb-8">
+            Websites and tools I've built for fun and productivity
+          </p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {hobbies.map((hobby, index) => (
+              <a
+                key={index}
+                href={hobby.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-xl p-4 text-center hover:border-[var(--color-secondary)]/50 hover:shadow-lg hover:shadow-sky-900/10 transition-all group"
+              >
+                <span className="material-symbols-outlined text-2xl text-[var(--color-secondary)] group-hover:scale-110 transition-transform">
+                  {hobby.icon}
+                </span>
+                <h3 className="mt-2 text-sm font-semibold text-[var(--color-on-surface)] font-[var(--font-headline)]">
+                  {hobby.name}
+                </h3>
+                <p className="mt-1 text-xs text-[var(--color-on-surface-variant)]">
+                  {hobby.description}
+                </p>
+              </a>
             ))}
           </div>
         </div>

@@ -1,4 +1,4 @@
-// Blog posts data for BhanuPrakash Salesforce Blog
+// Blog posts data for Bhanu Prakash Salesforce Blog
 export const posts = [
   {
     id: 1,

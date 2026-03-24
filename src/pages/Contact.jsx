@@ -168,7 +168,7 @@ export default function Contact() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-[var(--color-secondary)] text-sm">check</span>
-                    Architecture Reviews
+                    One on One Training Sessions
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-[var(--color-secondary)] text-sm">check</span>

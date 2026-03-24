@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto">
         {/* Logo */}
         <Link to="/index.html" className="text-xl font-extrabold text-[var(--color-on-surface)] tracking-tighter font-[var(--font-headline)]">
-          BhanuPrakash <span className="text-[var(--color-tertiary)]">⚡</span>
+          Bhanu Prakash <span className="text-[var(--color-tertiary)]">⚡</span>
         </Link>
 
         {/* Desktop Navigation */}
