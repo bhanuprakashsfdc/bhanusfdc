@@ -1,5 +1,9 @@
 // Certifications data for Certifications page
 // Sorted from toughest (Architect) to easiest (Specialist)
+
+// Base Trailhead profile URL for verification
+const TRAILHEAD_PROFILE = 'https://www.salesforce.com/trailblazer/bhanuprakashsfdc';
+
 export const certifications = [
   // === ARCHITECTS (Hardest) ===
   {
@@ -11,7 +15,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified System Architects focus on off-platform systems, integration, and securing access between systems.',
     color: '#EF4444',
-    image: '/src/assets/Certifications/System-Architect.webp'
+    image: 'Agentforce-Specialist.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 4,
@@ -22,7 +27,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Application Architects have a deep understanding of native Salesforce features and functionality.',
     color: '#EF4444',
-    image: '/src/assets/Certifications/Application-Architect.webp'
+    image: 'Application-Architect.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 7,
@@ -33,7 +39,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Platform Data Architects are experts at designing sound, scalable, high-performing solutions on the Salesforce Platform.',
     color: '#EF4444',
-    image: '/src/assets/Certifications/Platform-Data-Architect.webp'
+    image: 'Platform-Data-Architect.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 12,
@@ -44,7 +51,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Platform Integration Architects are experts at designing sound and scalable technical solutions on the Salesforce Platform.',
     color: '#EF4444',
-    image: '/src/assets/Certifications/Platform-Integration-Architect.webp'
+    image: 'Platform-Integration-Architect.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 13,
@@ -55,7 +63,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Platform Sharing and Visibility Architects are fluent in designing sound, scalable, and high-performing technical solutions.',
     color: '#EF4444',
-    image: '/src/assets/Certifications/Platform-Sharing-and-Visibility-Architect.webp'
+    image: 'Platform-Sharing-and-Visibility-Architect.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 11,
@@ -66,7 +75,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Platform Identity and Access Management Architects are experts at designing sound, high-performing solutions on the Salesforce Platform.',
     color: '#EF4444',
-    image: '/src/assets/Certifications/Platform-Identity-and-Access-Management-Architect.webp'
+    image: 'Platform-Identity-and-Access-Management-Architect.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 10,
@@ -77,7 +87,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Platform Development Lifecycle and Deployment Architects are experts at assessing architecture environments and requirements.',
     color: '#EF4444',
-    image: '/src/assets/Certifications/Platform-Development-Lifecycle-Deployement-Architect.webp'
+    image: 'Platform-Development-Lifecycle-Deployement-Architect.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
 
   // === DEVELOPERS ===
@@ -90,7 +101,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Platform Developer II developers are experts in the advanced programmatic capabilities of the Salesforce Platform.',
     color: '#06B6D4',
-    image: '/src/assets/Certifications/Platform-Developer-II.webp'
+    image: 'Platform-Developer-II.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 8,
@@ -101,7 +113,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Platform Developers understand how to develop and deploy custom business logic and custom interfaces using the programmatic capabilities.',
     color: '#06B6D4',
-    image: '/src/assets/Certifications/Platform-Developer.webp'
+    image: 'Platform-Developer.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 6,
@@ -112,7 +125,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Platform App Builders have the skills and knowledge to design, build, and implement custom applications using the declarative customization capabilities.',
     color: '#00A1E0',
-    image: '/src/assets/Certifications/Platform-App-Builder.webp'
+    image: 'Platform-App-Builder.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
 
   // === ADMINISTRATORS ===
@@ -125,7 +139,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Platform Administrators are Salesforce professionals who build and manage trusted solutions on the Salesforce Platform.',
     color: '#00A1E0',
-    image: '/src/assets/Certifications/Platform-Administrator.webp'
+    image: 'Platform-Administrator.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
 
   // === CONSULTANTS ===
@@ -138,7 +153,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Service Cloud Consultants are experts at designing and implementing Service Cloud solutions.',
     color: '#00A1E0',
-    image: '/src/assets/Certifications/Service_Cloud.webp'
+    image: 'Service_Cloud.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 15,
@@ -149,7 +165,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Field Service Consultants have proven experience with the administration and configuration of the Salesforce Platform.',
     color: '#F59E0B',
-    image: '/src/assets/Certifications/Field-Service-Consultant.webp'
+    image: 'Field-Service-Consultant.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 3,
@@ -160,7 +177,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified CRM Analytics and Einstein Discovery Consultants have experience designing and implementing on the CRM Analytics and Einstein Discovery platforms.',
     color: '#06B6D4',
-    image: '/src/assets/Certifications/CRM-Analytics-and-Einstein-Discovery-Consultant-Badge.webp'
+    image: 'CRM-Analytics-and-Einstein-Discovery-Consultant-Badge.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   },
 
   // === SPECIALISTS (Easiest) ===
@@ -173,7 +191,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified AI Associates should be able to provide informed strategies and guide stakeholder decisions based on Salesforce\'s Trusted AI Principles.',
     color: '#8B5CF6',
-    image: '/src/assets/Certifications/ai-associate.png'
+    image: 'ai-associate.png',
+    verifyUrl: TRAILHEAD_PROFILE
   },
   {
     id: 1,
@@ -184,7 +203,8 @@ export const certifications = [
     status: 'Active',
     description: 'Certified Agentforce Specialists are responsible for managing and optimizing Agentforce and have a deep understanding of both Salesforce platform configuration and Agentforce capabilities.',
     color: '#00A1E0',
-    image: '/src/assets/Certifications/Agentforce-Specialist.webp'
+    image: 'Agentforce-Specialist.webp',
+    verifyUrl: TRAILHEAD_PROFILE
   }
 ];
 

@@ -17,7 +17,7 @@ function CertCard({ cert, index }) {
         <div className="absolute backface-hidden inset-0 bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-xl p-4 flex flex-col items-center justify-center backface-hidden">
           {/* Cert Icon - Larger and full image */}
           <div className="w-full h-48 rounded-lg flex items-center justify-center overflow-hidden shadow-lg">
-            <img src={cert.image} alt={cert.shortName} className="w-full h-full object-contain" />
+            <img src={`/src/assets/Certifications/${cert.image}`} alt={cert.shortName} className="w-full h-full object-contain" />
           </div>
           
           {/* Click hint */}
@@ -34,8 +34,17 @@ function CertCard({ cert, index }) {
           <p className="text-sm text-[var(--color-on-surface-variant)] text-center">
             {cert.description}
           </p>
+          <a 
+            href={cert.verifyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 px-4 py-2 text-sm bg-[var(--color-secondary-container)] text-white rounded-lg hover:bg-[var(--color-secondary)] transition-colors inline-flex items-center gap-2"
+          >
+            <span className="material-symbols-outlined">verified</span>
+            Verify on Trailhead
+          </a>
           <button 
-            className="mt-4 px-4 py-2 text-sm bg-[var(--color-secondary-container)] text-white rounded-lg hover:bg-[var(--color-secondary)] transition-colors"
+            className="mt-2 px-4 py-2 text-sm text-[var(--color-on-surface-variant)] hover:text-[var(--color-on-surface)] transition-colors"
             onClick={(e) => {
               e.stopPropagation();
               setIsFlipped(false);
@@ -140,7 +149,7 @@ export default function Certifications() {
             Want to verify my certifications?
           </p>
           <a
-            href="https://trailhead.salesforce.com/credentials"
+            href="https://www.salesforce.com/trailblazer/bhanuprakashsfdc"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--color-secondary-container)] text-white font-semibold rounded-xl hover:bg-[var(--color-secondary)] transition-colors"
