@@ -16,8 +16,13 @@ function ProjectCard({ project }) {
       to={`/portfolio/${project.slug}.html`}
       className="block bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-xl overflow-hidden hover:border-[var(--color-secondary)]/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-900/10 transition-all"
     >
-      {/* Image Placeholder */}
-      <div className="aspect-video bg-gradient-to-br from-[var(--color-secondary)]/20 to-[var(--color-tertiary)]/20 relative">
+      {/* Image */}
+      <div className="aspect-video bg-[var(--color-surface)] relative overflow-hidden">
+        <img 
+          src={project.image} 
+          alt={project.name}
+          className="w-full h-full object-cover"
+        />
         <div className="absolute top-3 left-3">
           <span className={`px-2 py-1 text-xs font-medium rounded ${statusColors[project.status]}`}>
             {project.status}
