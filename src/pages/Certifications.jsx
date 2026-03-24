@@ -17,7 +17,7 @@ function CertCard({ cert, index }) {
         <div className="absolute backface-hidden inset-0 bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-xl p-4 flex flex-col items-center justify-center backface-hidden">
           {/* Cert Icon - Larger and full image */}
           <div className="w-full h-48 rounded-lg flex items-center justify-center overflow-hidden shadow-lg">
-            <img src={`/src/assets/Certifications/${cert.image}`} alt={cert.shortName} className="w-full h-full object-contain" />
+            <img src={cert.image} alt={cert.shortName} className="w-full h-full object-contain" />
           </div>
           
           {/* Click hint */}
