@@ -1,5 +1,6 @@
-# Specific redirects first
-/old-page    /new-page    301
+# Netlify redirects file (Format: from_path to_path status_code)
+# SPA routing is handled by Cloudflare's 404.html fallback automatically
 
-# SPA fallback (Note: html_fallback in wrangler.jsonc is preferred)
-/* /index.html 200
+# Example redirects:
+# /old-page    /new-page    301
+# /legacy/*    /new/:splat  301
