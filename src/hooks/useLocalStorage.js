@@ -90,6 +90,7 @@ export function useContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     subject: '',
     message: ''
   });
@@ -109,22 +110,34 @@ export function useContactForm() {
 
     setStatus('loading');
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Create form data for Salesforce Web-to-Lead
+    const params = new URLSearchParams();
+    params.append('oid', '00D280000016jv0');
+    params.append('retURL', 'http://www.bhanuprakashsfdc.com');
+    params.append('last_name', formData.name);
+    params.append('email', formData.email);
+    if (formData.phone) {
+      params.append('phone', formData.phone);
+    }
+    params.append('description', formData.subject ? `${formData.subject}\n\n${formData.message}` : formData.message);
     
-    // Store in localStorage
-    const messages = JSON.parse(localStorage.getItem('contact_messages') || '[]');
-    messages.push({
-      ...formData,
-      id: Date.now(),
-      date: new Date().toISOString()
-    });
-    localStorage.setItem('contact_messages', JSON.stringify(messages));
-    
-    setStatus('success');
-    setMessage('Message sent successfully! I\'ll get back to you within 24 hours.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    return true;
+    try {
+      // Submit to Salesforce Web-to-Lead
+      const response = await fetch('https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D280000016jv0', {
+        method: 'POST',
+        body: params,
+        mode: 'no-cors'
+      });
+      
+      setStatus('success');
+      setMessage('Thanks for submitting! We\'ll revert back within 24 hours.');
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+      return true;
+    } catch (error) {
+      setStatus('error');
+      setMessage('Failed to send message. Please try again.');
+      return false;
+    }
   }, [formData]);
 
   return { formData, updateField, status, message, submit };

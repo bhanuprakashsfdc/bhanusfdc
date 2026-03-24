@@ -9,6 +9,8 @@ import Portfolio from './pages/Portfolio';
 import PortfolioProject from './pages/PortfolioProject';
 import Training from './pages/Training';
 import TrainingCourse from './pages/TrainingCourse';
+import Interview from './pages/Interview';
+import InterviewTopic from './pages/InterviewTopic';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -29,6 +31,8 @@ function App() {
           <Route path="/portfolio/:slug.html" element={<PortfolioProject />} />
           <Route path="/training.html" element={<Training />} />
           <Route path="/training/:slug.html" element={<TrainingCourse />} />
+          <Route path="/interview.html" element={<Interview />} />
+          <Route path="/interview/:slug.html" element={<InterviewTopic />} />
           <Route path="/contact.html" element={<Contact />} />
           <Route path="/privacy-policy.html" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service.html" element={<TermsOfService />} />
