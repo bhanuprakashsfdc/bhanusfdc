@@ -1,3 +1,6 @@
-# Cloudflare Workers SPA fallback
-# This ensures all routes serve index.html for client-side routing to work
-/*    /index.html   200
+# Cloudflare Workers Assets handles SPA routing automatically
+# No redirects needed - all non-file requests serve index.html via html_fallback in wrangler.jsonc
+
+# Example redirects (uncomment to use):
+# /old-page    /new-page    301
+# /legacy/*    /new/:splat  301
