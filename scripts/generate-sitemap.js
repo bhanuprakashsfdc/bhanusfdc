@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { posts } from '../src/data/posts.js';
 import { trainingCourses } from '../src/data/training.js';
 import { projects } from '../src/data/projects.js';
+import { interviewTopics } from '../src/data/interview.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,6 +21,7 @@ const staticPages = [
   { loc: '/blog.html', priority: '0.9', changefreq: 'daily' },
   { loc: '/portfolio.html', priority: '0.8', changefreq: 'monthly' },
   { loc: '/training.html', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/interview.html', priority: '0.9', changefreq: 'weekly' },
   { loc: '/certifications.html', priority: '0.7', changefreq: 'monthly' },
   { loc: '/contact.html', priority: '0.6', changefreq: 'yearly' },
   { loc: '/privacy-policy.html', priority: '0.3', changefreq: 'yearly' },
@@ -78,6 +80,17 @@ function generateXML() {
 `;
   });
 
+  // Add all interview topics
+  interviewTopics.forEach(topic => {
+    xml += `  <url>
+    <loc>${SITE_URL}/interview/${topic.slug}.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+`;
+  });
+
   xml += `</urlset>`;
 
   return xml;
@@ -92,4 +105,5 @@ console.log(`  - ${staticPages.length} static pages`);
 console.log(`  - ${posts.length} blog posts`);
 console.log(`  - ${trainingCourses.length} training courses`);
 console.log(`  - ${projects.length} portfolio projects`);
-console.log(`  - Total: ${staticPages.length + posts.length + trainingCourses.length + projects.length} URLs`);
+console.log(`  - ${interviewTopics.length} interview topics`);
+console.log(`  - Total: ${staticPages.length + posts.length + trainingCourses.length + projects.length + interviewTopics.length} URLs`);
