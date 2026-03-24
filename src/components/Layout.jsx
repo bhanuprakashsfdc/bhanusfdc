@@ -3,7 +3,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import CookieConsent from './CookieConsent';
 import Toast from './Toast';
-
+import AIChatModal from './AIChatModal';
+import ChatBot from './ChatBot';
 export default function Layout({ toast, children }) {
   return (
     <div className="min-h-screen flex flex-col bg-[var(--color-background)] text-[var(--color-on-background)]">
@@ -20,9 +21,10 @@ export default function Layout({ toast, children }) {
       <main id="main-content" className="flex-1">
         {children || <Outlet />}
       </main>
-
+      <ChatBot />
       <Footer />
       <CookieConsent />
+      <AIChatModal />
       {toast && <Toast message={toast.message} type={toast.type} />}
     </div>
   );

@@ -75,6 +75,20 @@ export default function Contact() {
                 />
               </div>
 
+              {/* Phone */}
+              <div>
+                <label className="block text-sm font-medium text-[var(--color-on-surface)] mb-2">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  value={formData.phone}
+                  onChange={(e) => updateField('phone', e.target.value)}
+                  className="w-full px-4 py-3 bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-lg text-[var(--color-on-surface)] placeholder:text-[var(--color-on-surface-variant)] focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)]"
+                  placeholder="+1 (555) 000-0000"
+                />
+              </div>
+
               {/* Subject */}
               <div>
                 <label className="block text-sm font-medium text-[var(--color-on-surface)] mb-2">
@@ -120,7 +134,7 @@ export default function Contact() {
 
               {/* Note */}
               <p className="text-xs text-[var(--color-on-surface-variant)] text-center">
-                No backend — messages stored locally. Please also connect on LinkedIn for faster response.
+                If you want faster response reach out via <a href={social.linkedin} target="_blank" rel="noopener noreferrer" className="text-[#0077b5] hover:underline">LinkedIn</a>
               </p>
             </form>
 
