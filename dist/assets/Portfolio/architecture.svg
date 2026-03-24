@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5dade2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Cloud shape -->
+  <path d="M180 150 Q180 120 210 120 Q230 120 240 140 Q260 130 280 140 Q310 140 310 170 Q310 190 280 190 L220 190 Q180 190 180 170 Z" fill="white" opacity="0.2"/>
+  <!-- Architecture layers -->
+  <rect x="155" y="55" width="90" height="20" rx="3" stroke="white" stroke-width="3" fill="none"/>
+  <rect x="165" y="60" width="30" height="10" fill="white" opacity="0.5"/>
+  <rect x="205" y="60" width="30" height="10" fill="white" opacity="0.5"/>
+  <rect x="175" y="82" width="50" height="3" fill="white"/>
+  <rect x="155" y="90" width="90" height="20" rx="3" stroke="white" stroke-width="3" fill="none"/>
+  <rect x="165" y="95" width="30" height="10" fill="white" opacity="0.5"/>
+  <rect x="205" y="95" width="30" height="10" fill="white" opacity="0.5"/>
+  <rect x="175" y="117" width="50" height="3" fill="white"/>
+  <rect x="155" y="125" width="90" height="20" rx="3" stroke="white" stroke-width="3" fill="none"/>
+  <rect x="165" y="130" width="30" height="10" fill="white" opacity="0.5"/>
+  <rect x="205" y="130" width="30" height="10" fill="white" opacity="0.5"/>
+  <rect x="175" y="152" width="50" height="3" fill="white"/>
+  <!-- Salesforce text -->
+  <text x="200" y="185" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">Salesforce</text>
+  <text x="200" y="205" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Architecture</text>
+</svg>
