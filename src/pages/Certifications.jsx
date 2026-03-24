@@ -9,43 +9,19 @@ function CertCard({ cert, index }) {
 
   return (
     <div 
-      className="cert-card perspective-1000 h-64 cursor-pointer"
+      className="cert-card perspective-1000 h-80 cursor-pointer"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <div className={`cert-card-inner preserve-3d relative w-full h-full ${isFlipped ? 'rotate-y-180' : ''}`}>
         {/* Front */}
-        <div className="absolute backface-hidden inset-0 bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-xl p-6 flex flex-col items-center justify-center backface-hidden">
-          {/* Cert Icon */}
-          <div 
-            className="w-16 h-16 rounded-xl flex items-center justify-center text-2xl font-bold text-white shadow-lg"
-            style={{ backgroundColor: cert.color }}
-          >
-            {cert.shortName}
+        <div className="absolute backface-hidden inset-0 bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-xl p-4 flex flex-col items-center justify-center backface-hidden">
+          {/* Cert Icon - Larger and full image */}
+          <div className="w-full h-48 rounded-lg flex items-center justify-center overflow-hidden shadow-lg">
+            <img src={cert.image} alt={cert.shortName} className="w-full h-full object-contain" />
           </div>
           
-          {/* Cert Name */}
-          <h3 className="mt-4 text-center font-semibold text-[var(--color-on-surface)] font-[var(--font-headline)] line-clamp-2">
-            {cert.name}
-          </h3>
-          
-          {/* Level Badge */}
-          <span className="mt-2 px-3 py-1 text-xs font-medium bg-[var(--color-surface)] border border-[var(--color-outline-variant)] rounded-full text-[var(--color-on-surface-variant)]">
-            {cert.level}
-          </span>
-          
-          {/* Year */}
-          <p className="mt-3 text-sm text-[var(--color-on-surface-variant)]">
-            Since {cert.year}
-          </p>
-          
-          {/* Status */}
-          <span className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-emerald-400">
-            <span className="w-2 h-2 rounded-full bg-emerald-400" />
-            {cert.status}
-          </span>
-          
           {/* Click hint */}
-          <p className="mt-4 text-xs text-[var(--color-on-surface-variant)]">
+          <p className="mt-2 text-xs text-[var(--color-on-surface-variant)]">
             Click to see details →
           </p>
         </div>

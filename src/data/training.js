@@ -7,6 +7,7 @@ export const trainingCourses = [
     description: 'Master Salesforce Health Cloud for healthcare patient management, care coordination, and patient 360 solutions.',
     fullDescription: 'This comprehensive Health Cloud training covers patient engagement, care planning, symptom tracking, and integrated healthcare workflows. Learn to build patient-centric solutions that improve health outcomes and streamline healthcare operations.',
     icon: 'health_and_safety',
+    image: '/src/assets/Training/health-cloud.svg',
     duration: '12 Weeks',
     level: 'Advanced',
     modules: [
@@ -68,6 +69,7 @@ export const trainingCourses = [
     description: 'Learn to implement mobile field service solutions for dispatch management, work orders, and technician scheduling.',
     fullDescription: 'Field Service Lightning training covers the complete field service lifecycle from scheduling to completion. Master work order management, service appointments, asset tracking, and mobile technician workflows.',
     icon: 'construction',
+    image: '/src/assets/Training/field-service-lightning.svg',
     duration: '12 Weeks',
     level: 'Intermediate',
     modules: [
@@ -129,6 +131,7 @@ export const trainingCourses = [
     description: 'Implement manufacturing sales and service solutions for order management, contracts, and product traceability.',
     fullDescription: 'Manufacturing Cloud training teaches you to build solutions for manufacturers including account-based forecasting, agreement management, and product traceability. Perfect for sales and service transformations in manufacturing.',
     icon: 'factory',
+    image: '/src/assets/Training/manufacturing-cloud.svg',
     duration: '12 Weeks',
     level: 'Intermediate',
     modules: [
@@ -190,6 +193,7 @@ export const trainingCourses = [
     description: 'Learn OmniStudio, Data Model, and custom industry solutions for vertical-specific CRM implementations.',
     fullDescription: 'Industries Cloud training covers the foundation of all industry solutions. Learn OmniStudio, Vlocity CMT, and custom industry data models to build any vertical-specific solution.',
     icon: 'apps',
+    image: '/src/assets/Training/industries-cloud.svg',
     duration: '12 Weeks',
     level: 'Advanced',
     modules: [
@@ -251,6 +255,7 @@ export const trainingCourses = [
     description: 'Master wealth management, banking, and insurance solutions with FSC data model and compliance.',
     fullDescription: 'Financial Service Cloud training covers the complete banking and wealth management data model. Learn household management, prospector, compliance tracking, and financial account modeling for banking transformations.',
     icon: 'account_balance',
+    image: '/src/assets/Training/financial-service-cloud.svg',
     duration: '12 Weeks',
     level: 'Advanced',
     modules: [
@@ -312,6 +317,7 @@ export const trainingCourses = [
     description: 'Create customer and partner portals with Experience Builder, Lightning Web Components, and authentication.',
     fullDescription: 'Experience Cloud training covers the complete portal implementation lifecycle. Learn Experience Builder, digital experiences, community moderation, and custom Lightning Web Components for external users.',
     icon: 'language',
+    image: '/src/assets/Training/experience-cloud.svg',
     duration: '12 Weeks',
     level: 'Intermediate',
     modules: [
@@ -373,6 +379,7 @@ export const trainingCourses = [
     description: 'Master configure, price, quote solutions for streamlined sales processes and accurate pricing.',
     fullDescription: 'CPQ (Configure, Price, Quote) Cloud training covers the complete quote-to-cash lifecycle. Learn product configuration, pricing logic, quote generation, contract management, and billing integration for efficient sales processes.',
     icon: 'shopping_cart',
+    image: '/src/assets/Training/cpq-cloud.svg',
     duration: '10 Weeks',
     level: 'Advanced',
     modules: [
@@ -434,6 +441,7 @@ export const trainingCourses = [
     description: 'Learn billing, revenue management, and subscription solutions for modern SaaS and subscription businesses.',
     fullDescription: 'Revenue Cloud training covers the complete revenue management lifecycle. Learn billing, subscription management, revenue recognition, usage-based pricing, and financial reporting for subscription businesses.',
     icon: 'payments',
+    image: '/src/assets/Training/revenue-cloud.svg',
     duration: '10 Weeks',
     level: 'Advanced',
     modules: [

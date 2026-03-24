@@ -1,40 +1,18 @@
 // Certifications data for Certifications page
+// Sorted from toughest (Architect) to easiest (Specialist)
 export const certifications = [
-  // Agentforce (2)
+  // === ARCHITECTS (Hardest) ===
   {
-    id: 1,
-    name: 'Salesforce Certified Agentforce Specialist',
-    shortName: 'Agentforce Specialist',
-    level: 'Specialist',
-    year: 2024,
+    id: 14,
+    name: 'Salesforce Certified System Architect',
+    shortName: 'System Architect',
+    level: 'Architect',
+    year: 2025,
     status: 'Active',
-    description: 'Certified Agentforce Specialists are responsible for managing and optimizing Agentforce and have a deep understanding of both Salesforce platform configuration and Agentforce capabilities.',
-    color: '#00A1E0'
+    description: 'Certified System Architects focus on off-platform systems, integration, and securing access between systems.',
+    color: '#EF4444',
+    image: '/src/assets/Certifications/System-Architect.webp'
   },
-  {
-    id: 2,
-    name: 'Salesforce Certified AI Associate',
-    shortName: 'AI Associate',
-    level: 'Specialist',
-    year: 2024,
-    status: 'Active',
-    description: 'Certified AI Associates should be able to provide informed strategies and guide stakeholder decisions based on Salesforce\'s Trusted AI Principles.',
-    color: '#8B5CF6'
-  },
-
-  // CRM Analytics (1)
-  {
-    id: 3,
-    name: 'Salesforce Certified CRM Analytics and Einstein Discovery Consultant',
-    shortName: 'CRM Analytics',
-    level: 'Consultant',
-    year: 2020,
-    status: 'Active',
-    description: 'Certified CRM Analytics and Einstein Discovery Consultants have experience designing and implementing on the CRM Analytics and Einstein Discovery platforms.',
-    color: '#06B6D4'
-  },
-
-  // Salesforce Platform (11)
   {
     id: 4,
     name: 'Salesforce Certified Application Architect',
@@ -43,27 +21,8 @@ export const certifications = [
     year: 2023,
     status: 'Active',
     description: 'Certified Application Architects have a deep understanding of native Salesforce features and functionality.',
-    color: '#EF4444'
-  },
-  {
-    id: 5,
-    name: 'Salesforce Certified Platform Administrator',
-    shortName: 'Platform Admin',
-    level: 'Administrator',
-    year: 2020,
-    status: 'Active',
-    description: 'Certified Platform Administrators are Salesforce professionals who build and manage trusted solutions on the Salesforce Platform.',
-    color: '#00A1E0'
-  },
-  {
-    id: 6,
-    name: 'Salesforce Certified Platform App Builder',
-    shortName: 'Platform App Builder',
-    level: 'Developer',
-    year: 2023,
-    status: 'Active',
-    description: 'Certified Platform App Builders have the skills and knowledge to design, build, and implement custom applications using the declarative customization capabilities.',
-    color: '#00A1E0'
+    color: '#EF4444',
+    image: '/src/assets/Certifications/Application-Architect.webp'
   },
   {
     id: 7,
@@ -73,47 +32,8 @@ export const certifications = [
     year: 2023,
     status: 'Active',
     description: 'Certified Platform Data Architects are experts at designing sound, scalable, high-performing solutions on the Salesforce Platform.',
-    color: '#EF4444'
-  },
-  {
-    id: 8,
-    name: 'Salesforce Certified Platform Developer',
-    shortName: 'Platform Developer I',
-    level: 'Developer',
-    year: 2020,
-    status: 'Active',
-    description: 'Certified Platform Developers understand how to develop and deploy custom business logic and custom interfaces using the programmatic capabilities.',
-    color: '#06B6D4'
-  },
-  {
-    id: 9,
-    name: 'Salesforce Certified Platform Developer II',
-    shortName: 'Platform Developer II',
-    level: 'Developer',
-    year: 2022,
-    status: 'Active',
-    description: 'Certified Platform Developer II developers are experts in the advanced programmatic capabilities of the Salesforce Platform.',
-    color: '#06B6D4'
-  },
-  {
-    id: 10,
-    name: 'Salesforce Certified Platform Development Lifecycle and Deployment Architect',
-    shortName: 'Deployment Architect',
-    level: 'Architect',
-    year: 2025,
-    status: 'Active',
-    description: 'Certified Platform Development Lifecycle and Deployment Architects are experts at assessing architecture environments and requirements.',
-    color: '#EF4444'
-  },
-  {
-    id: 11,
-    name: 'Salesforce Certified Platform Identity and Access Management Architect',
-    shortName: 'IAM Architect',
-    level: 'Architect',
-    year: 2025,
-    status: 'Active',
-    description: 'Certified Platform Identity and Access Management Architects are experts at designing sound, high-performing solutions on the Salesforce Platform.',
-    color: '#EF4444'
+    color: '#EF4444',
+    image: '/src/assets/Certifications/Platform-Data-Architect.webp'
   },
   {
     id: 12,
@@ -123,7 +43,8 @@ export const certifications = [
     year: 2025,
     status: 'Active',
     description: 'Certified Platform Integration Architects are experts at designing sound and scalable technical solutions on the Salesforce Platform.',
-    color: '#EF4444'
+    color: '#EF4444',
+    image: '/src/assets/Certifications/Platform-Integration-Architect.webp'
   },
   {
     id: 13,
@@ -133,30 +54,81 @@ export const certifications = [
     year: 2023,
     status: 'Active',
     description: 'Certified Platform Sharing and Visibility Architects are fluent in designing sound, scalable, and high-performing technical solutions.',
-    color: '#EF4444'
+    color: '#EF4444',
+    image: '/src/assets/Certifications/Platform-Sharing-and-Visibility-Architect.webp'
   },
   {
-    id: 14,
-    name: 'Salesforce Certified System Architect',
-    shortName: 'System Architect',
+    id: 11,
+    name: 'Salesforce Certified Platform Identity and Access Management Architect',
+    shortName: 'IAM Architect',
     level: 'Architect',
     year: 2025,
     status: 'Active',
-    description: 'Certified System Architects focus on off-platform systems, integration, and securing access between systems.',
-    color: '#EF4444'
+    description: 'Certified Platform Identity and Access Management Architects are experts at designing sound, high-performing solutions on the Salesforce Platform.',
+    color: '#EF4444',
+    image: '/src/assets/Certifications/Platform-Identity-and-Access-Management-Architect.webp'
+  },
+  {
+    id: 10,
+    name: 'Salesforce Certified Platform Development Lifecycle and Deployment Architect',
+    shortName: 'Deployment Architect',
+    level: 'Architect',
+    year: 2025,
+    status: 'Active',
+    description: 'Certified Platform Development Lifecycle and Deployment Architects are experts at assessing architecture environments and requirements.',
+    color: '#EF4444',
+    image: '/src/assets/Certifications/Platform-Development-Lifecycle-Deployement-Architect.webp'
   },
 
-  // Service Cloud (2)
+  // === DEVELOPERS ===
   {
-    id: 15,
-    name: 'Salesforce Certified Field Service Consultant',
-    shortName: 'Field Service',
-    level: 'Consultant',
+    id: 9,
+    name: 'Salesforce Certified Platform Developer II',
+    shortName: 'Platform Developer II',
+    level: 'Developer',
+    year: 2022,
+    status: 'Active',
+    description: 'Certified Platform Developer II developers are experts in the advanced programmatic capabilities of the Salesforce Platform.',
+    color: '#06B6D4',
+    image: '/src/assets/Certifications/Platform-Developer-II.webp'
+  },
+  {
+    id: 8,
+    name: 'Salesforce Certified Platform Developer',
+    shortName: 'Platform Developer I',
+    level: 'Developer',
+    year: 2020,
+    status: 'Active',
+    description: 'Certified Platform Developers understand how to develop and deploy custom business logic and custom interfaces using the programmatic capabilities.',
+    color: '#06B6D4',
+    image: '/src/assets/Certifications/Platform-Developer.webp'
+  },
+  {
+    id: 6,
+    name: 'Salesforce Certified Platform App Builder',
+    shortName: 'Platform App Builder',
+    level: 'Developer',
     year: 2023,
     status: 'Active',
-    description: 'Certified Field Service Consultants have proven experience with the administration and configuration of the Salesforce Platform.',
-    color: '#F59E0B'
+    description: 'Certified Platform App Builders have the skills and knowledge to design, build, and implement custom applications using the declarative customization capabilities.',
+    color: '#00A1E0',
+    image: '/src/assets/Certifications/Platform-App-Builder.webp'
   },
+
+  // === ADMINISTRATORS ===
+  {
+    id: 5,
+    name: 'Salesforce Certified Platform Administrator',
+    shortName: 'Platform Admin',
+    level: 'Administrator',
+    year: 2020,
+    status: 'Active',
+    description: 'Certified Platform Administrators are Salesforce professionals who build and manage trusted solutions on the Salesforce Platform.',
+    color: '#00A1E0',
+    image: '/src/assets/Certifications/Platform-Administrator.webp'
+  },
+
+  // === CONSULTANTS ===
   {
     id: 16,
     name: 'Salesforce Certified Service Cloud Consultant',
@@ -165,7 +137,54 @@ export const certifications = [
     year: 2022,
     status: 'Active',
     description: 'Certified Service Cloud Consultants are experts at designing and implementing Service Cloud solutions.',
-    color: '#00A1E0'
+    color: '#00A1E0',
+    image: '/src/assets/Certifications/Service_Cloud.webp'
+  },
+  {
+    id: 15,
+    name: 'Salesforce Certified Field Service Consultant',
+    shortName: 'Field Service',
+    level: 'Consultant',
+    year: 2023,
+    status: 'Active',
+    description: 'Certified Field Service Consultants have proven experience with the administration and configuration of the Salesforce Platform.',
+    color: '#F59E0B',
+    image: '/src/assets/Certifications/Field-Service-Consultant.webp'
+  },
+  {
+    id: 3,
+    name: 'Salesforce Certified CRM Analytics and Einstein Discovery Consultant',
+    shortName: 'CRM Analytics',
+    level: 'Consultant',
+    year: 2020,
+    status: 'Active',
+    description: 'Certified CRM Analytics and Einstein Discovery Consultants have experience designing and implementing on the CRM Analytics and Einstein Discovery platforms.',
+    color: '#06B6D4',
+    image: '/src/assets/Certifications/CRM-Analytics-and-Einstein-Discovery-Consultant-Badge.webp'
+  },
+
+  // === SPECIALISTS (Easiest) ===
+  {
+    id: 2,
+    name: 'Salesforce Certified AI Associate',
+    shortName: 'AI Associate',
+    level: 'Specialist',
+    year: 2024,
+    status: 'Active',
+    description: 'Certified AI Associates should be able to provide informed strategies and guide stakeholder decisions based on Salesforce\'s Trusted AI Principles.',
+    color: '#8B5CF6',
+    image: '/src/assets/Certifications/ai-associate.png'
+  },
+  {
+    id: 1,
+    name: 'Salesforce Certified Agentforce Specialist',
+    shortName: 'Agentforce Specialist',
+    level: 'Specialist',
+    year: 2024,
+    status: 'Active',
+    description: 'Certified Agentforce Specialists are responsible for managing and optimizing Agentforce and have a deep understanding of both Salesforce platform configuration and Agentforce capabilities.',
+    color: '#00A1E0',
+    image: '/src/assets/Certifications/Agentforce-Specialist.webp'
   }
 ];
 

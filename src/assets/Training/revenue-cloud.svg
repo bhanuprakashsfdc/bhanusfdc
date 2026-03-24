@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#48c9b0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1abc9c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Cloud shape -->
+  <path d="M180 150 Q180 120 210 120 Q230 120 240 140 Q260 130 280 140 Q310 140 310 170 Q310 190 280 190 L220 190 Q180 190 180 170 Z" fill="white" opacity="0.2"/>
+  <!-- Dollar/Currency icon -->
+  <circle cx="210" cy="85" r="30" stroke="white" stroke-width="3" fill="none"/>
+  <text x="210" y="95" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">$</text>
+  <line x1="195" y1="75" x2="225" y2="75" stroke="white" stroke-width="2"/>
+  <line x1="195" y1="95" x2="225" y2="95" stroke="white" stroke-width="2"/>
+  <!-- Salesforce text -->
+  <text x="200" y="175" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">Salesforce</text>
+  <text x="200" y="195" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Revenue Cloud</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a1e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0070d2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Cloud shape -->
+  <path d="M280 170 Q280 150 300 150 Q320 150 320 170 Q320 190 300 190 L300 190 Q280 190 280 170" fill="white" opacity="0.3"/>
+  <path d="M180 150 Q180 120 210 120 Q230 120 240 140 Q260 130 280 140 Q310 140 310 170 Q310 190 280 190 L220 190 Q180 190 180 170 Z" fill="white" opacity="0.2"/>
+  <!-- Robot/AI icon -->
+  <circle cx="200" cy="75" r="25" stroke="white" stroke-width="3" fill="none"/>
+  <circle cx="190" cy="70" r="5" fill="white"/>
+  <circle cx="210" cy="70" r="5" fill="white"/>
+  <rect x="188" y="82" width="24" height="8" rx="4" fill="white"/>
+  <rect x="195" y="95" width="10" height="15" rx="2" stroke="white" stroke-width="3" fill="none"/>
+  <!-- Salesforce text -->
+  <text x="200" y="175" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">Salesforce</text>
+  <text x="200" y="195" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Agentforce</text>
+</svg>

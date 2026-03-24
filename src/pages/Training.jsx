@@ -45,11 +45,13 @@ export default function Training() {
               to={`/training/${course.slug}.html`}
               className="bg-[var(--color-surface-container)] border border-[var(--color-outline-variant)] rounded-xl overflow-hidden hover:border-[var(--color-secondary)]/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-900/10 transition-all"
             >
-              {/* Icon Placeholder */}
-              <div className="aspect-video bg-gradient-to-br from-[var(--color-secondary)]/20 to-[var(--color-tertiary)]/20 relative flex items-center justify-center">
-                <span className="material-symbols-outlined text-5xl text-[var(--color-secondary)]">
-                  {course.icon}
-                </span>
+              {/* Image */}
+              <div className="aspect-video bg-[var(--color-surface)] relative overflow-hidden">
+                <img 
+                  src={course.image} 
+                  alt={course.name}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute top-3 right-3">
                   <span className={`px-3 py-1 text-xs font-medium rounded-full border ${levelBadgeColors[course.level]}`}>
                     {course.level}
